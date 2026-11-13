@@ -1,0 +1,11 @@
+{
+  "name": "copyclean",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Browser extension that copies URLs without tracking parameters",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs"
+  },
+  "license": "MIT"
+}

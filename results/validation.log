@@ -1,0 +1,26 @@
+$ npm install --no-audit --no-fund
+
+up to date in 1s
+$ npm test
+
+> copyclean@1.0.0 test
+> node --test tests/core.test.mjs
+
+✔ removes tracking parameters and keeps the rest (1.9945ms)
+✔ treats prefixed and explicit tracking keys as tracking (0.2797ms)
+✔ keeps ref by default and removes it on request (1.2998ms)
+✔ strips the fragment unless disabled (0.2995ms)
+✔ unwraps known redirect links (0.4907ms)
+✔ normalises bare hosts through the URL parser (0.2442ms)
+✔ rejects invalid input (0.7888ms)
+✔ cleanText normalises whitespace and punctuation (0.5811ms)
+✔ cleanText rejects non-strings (0.2736ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 151.1502
+$ bash -c node examples/transform.mjs > results/demo.txt

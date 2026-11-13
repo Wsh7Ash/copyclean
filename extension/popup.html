@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>copyclean</title>
+    <style>
+      body { font: 13px/1.4 system-ui, sans-serif; margin: 12px; width: 360px; }
+      label { display: block; margin: 8px 0 4px; color: #444; }
+      input[type="text"] { width: 100%; box-sizing: border-box; padding: 6px; }
+      button { margin-top: 8px; padding: 6px 12px; cursor: pointer; }
+      #status { min-height: 1.2em; color: #0a7; }
+      #diff { color: #555; font-size: 12px; margin-top: 6px; word-break: break-all; }
+    </style>
+  </head>
+  <body>
+    <label for="source">Current page</label>
+    <input id="source" type="text" readonly />
+    <label for="result">Clean link</label>
+    <input id="result" type="text" readonly />
+    <button id="copy" type="button">Copy clean link</button>
+    <button id="options" type="button">Options</button>
+    <div id="status" role="status"></div>
+    <div id="diff"></div>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

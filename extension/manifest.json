@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "copyclean",
+  "version": "1.0.0",
+  "description": "Copy the current URL without tracking parameters, fragments or redirect wrappers.",
+  "permissions": ["activeTab", "storage", "clipboardWrite"],
+  "action": {
+    "default_title": "copyclean",
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  }
+}
